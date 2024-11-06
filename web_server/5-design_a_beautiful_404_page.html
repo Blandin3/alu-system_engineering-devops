@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! 404 Error</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 6em;
+            color: #ff6347;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 20px;
+        }
+        .image-container {
+            max-width: 400px;
+            margin: 50px auto;
+        }
+        .error-img {
+            width: 100%;
+            max-width: 350px;
+            animation: rotateImage 5s infinite linear;
+        }
+        .message-container {
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff4500;
+        }
+        @keyframes rotateImage {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main message -->
+    <h1>Oops!</h1>
+    <p>It looks like you’ve wandered off the map.</p>
+
+    <!-- Fun Image or Illustration -->
+    <div class="image-container">
+        <img src="https://placekitten.com/400/300" alt="Lost Kitten" class="error-img">
+    </div>
+
+    <!-- Additional message -->
+    <div class="message-container">
+        <p>But don't worry, we’re right here with you!</p>
+        <p>Ceci n'est pas une page</p> <!-- Mandatory string inclusion -->
+
+        <!-- Call to Action (Button) -->
+        <a href="/" class="button">Go Home</a>
+    </div>
+
+</body>
+</html>
+       
