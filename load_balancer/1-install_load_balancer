@@ -10,8 +10,8 @@ apt-get -y update
 apt-get install -y nginx
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/default
 echo "upstream servers{
-	server 54.172.28.130;
-	server 3.90.184.33;}
+	server 18.207.153.59;
+	server 54.225.44.106;}
 	server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
