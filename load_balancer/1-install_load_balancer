@@ -15,14 +15,14 @@ sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
 # sudo truncate -s 0 /etc/haproxy/haproxy.cfg
 
 # Check if the configuration for frontend and backend exists
-if ! grep -q "frontend sarah-frontend" /etc/haproxy/haproxy.cfg; then
+if ! grep -q "frontend Blandine-frontend" /etc/haproxy/haproxy.cfg; then
     # Add frontend and backend configuration
     server_config="frontend sarah-frontend
         bind *:80
         mode http
         default_backend Blandine-backend
 
-    backend sarah-backend
+    backend Blandine-backend
         balance roundrobin
         server 6268-web-01 18.207.153.59:80 check
         server 6268-web-02 54.225.44.106:80 check"
